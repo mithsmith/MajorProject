@@ -1,0 +1,12 @@
+pandas
+numpy
+streamlit
+sklearn
+joblib
+os
+Pillow
+wordcloud
+matplotlib
+nltk
+string
+re
