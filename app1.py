@@ -16,7 +16,7 @@ st.write('This project is based on Naive Bayes Classifier.')
 loaded_model = joblib.load(SAVED_MODEL_FILE)
 #text_model = Pipeline([('tfidf',TfidfVectorizer()),('model',MultinomialNB())])
 #text_model.fit(x,y)
-message = st.text_area("Enter your text below:", value="", place_holder="type here...")
+message = st.text_area("Enter your text below:")
 out_text = loaded_model.predict([message])
 if st.button("Analyze Sentiment"):
   st.title(out_text)
