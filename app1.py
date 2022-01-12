@@ -10,7 +10,7 @@ SAVED_MODEL_FILE = "SavedModel.sav"
 #df = pd.read_csv('senti_review_file.csv')
 #x = df.iloc[:,0].values # Review column as input
 #y = df.iloc[:,1].values # Sentiment column as output
-st.title("Sentiment Analysis On Review")
+st.title("Sentiment Analysis On Reviews")
 st.subheader('TF-IDF Vectorizer')
 st.write('This project is based on Naive Bayes Classifier.')
 loaded_model = joblib.load(SAVED_MODEL_FILE)
