@@ -11,12 +11,12 @@ SAVED_MODEL_FILE = "SavedModel.sav"
 #x = df.iloc[:,0].values # Review column as input
 #y = df.iloc[:,1].values # Sentiment column as output
 st.title("Sentiment Analysis On Review")
-st.subheader('TFI-DF Vectorizer')
+st.subheader('TF-IDF Vectorizer')
 st.write('This project is based on Naive Bayes Classifier.')
 loaded_model = joblib.load(SAVED_MODEL_FILE)
 #text_model = Pipeline([('tfidf',TfidfVectorizer()),('model',MultinomialNB())])
 #text_model.fit(x,y)
-message = st.text_area("Enter Text","Type Here ..")
+message = st.text_area("Enter your text below:", placeholder="type here...")
 out_text = loaded_model.predict([message])
 if st.button("Analyze Sentiment"):
   st.title(out_text)
